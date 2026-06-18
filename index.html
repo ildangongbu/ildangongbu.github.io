@@ -67,10 +67,10 @@
     }
     </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Google Analytics (GA4) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-125408913-1"
+      src="https://www.googletagmanager.com/gtag/js?id=G-R1S53M0Q1W"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -79,7 +79,22 @@
       }
       gtag('js', new Date());
 
-      gtag('config', 'UA-125408913-1');
+      gtag('config', 'G-R1S53M0Q1W');
+
+      // 앱 다운로드(App Store / Google Play) 링크 클릭 추적 (위임 방식)
+      document.addEventListener('click', function (e) {
+        var link = e.target.closest && e.target.closest('a[href]');
+        if (!link) return;
+        var href = link.href || '';
+        var store = href.indexOf('apps.apple.com') > -1 ? 'app_store'
+                  : href.indexOf('play.google.com') > -1 ? 'google_play' : null;
+        if (!store) return;
+        gtag('event', 'app_download_click', {
+          store: store,
+          link_url: href,
+          source_page: location.pathname
+        });
+      });
     </script>
 
     <!-- Google Font -->
