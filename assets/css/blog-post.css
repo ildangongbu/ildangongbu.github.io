@@ -412,3 +412,75 @@
   height: 42px;
   width: auto;
 }
+
+/* ---------- 카테고리 필터 ---------- */
+.blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-btn {
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #555;
+  background: #f5f7fa;
+  border: 1px solid #e2e6ea;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-btn:hover {
+  border-color: #ec174f;
+  color: #ec174f;
+  background: #fff5f8;
+}
+
+.filter-btn.active {
+  color: #fff;
+  background: #ec174f;
+  border-color: #ec174f;
+}
+
+/* ---------- 페이지네이션 ---------- */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 2rem;
+}
+
+.page-btn {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 0.6rem;
+  font-size: 0.9rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  color: #555;
+  background: #f5f7fa;
+  border: 1px solid #e2e6ea;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.page-btn:hover {
+  border-color: #ec174f;
+  color: #ec174f;
+  background: #fff5f8;
+}
+
+.page-btn.active {
+  color: #fff;
+  background: #ec174f;
+  border-color: #ec174f;
+  cursor: default;
+}
