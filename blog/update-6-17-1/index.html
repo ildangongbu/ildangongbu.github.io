@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="ko"> <head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>일당공부 v6.17.1 업데이트 안내 | 일단공부 블로그</title><meta name="description" content="iOS에서 리뷰 버튼을 눌러도 앱 스토어로 이동하지 않던 문제와 리뷰 완료 후에도 리뷰 요청이 반복되던 문제를 수정했습니다."><meta name="author" content="dev.yakuza@gmail.com"><link rel="canonical" href="https://ildangongbu.posstree.com/blog/update-6-17-1/"><link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png"><meta property="og:url" content="https://ildangongbu.posstree.com/blog/update-6-17-1/"><meta property="og:type" content="article"><meta property="og:title" content="일당공부 v6.17.1 업데이트 안내"><meta property="og:locale" content="ko_KR"><meta property="og:description" content="iOS에서 리뷰 버튼을 눌러도 앱 스토어로 이동하지 않던 문제와 리뷰 완료 후에도 리뷰 요청이 반복되던 문제를 수정했습니다."><meta property="og:site_name" content="일단공부"><meta property="og:image" content="https://ildangongbu.posstree.com/blog-og/update-6-17-1.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="일당공부 v6.17.1 업데이트 안내 - 일단공부 블로그"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://ildangongbu.posstree.com/blog-og/update-6-17-1.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"일당공부 v6.17.1 업데이트 안내","description":"iOS에서 리뷰 버튼을 눌러도 앱 스토어로 이동하지 않던 문제와 리뷰 완료 후에도 리뷰 요청이 반복되던 문제를 수정했습니다.","datePublished":"2026-06-30","inLanguage":"ko","isPartOf":{"@type":"Blog","name":"일단공부 블로그","url":"https://ildangongbu.posstree.com/blog/"}}</script><link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/css/ildangongbu-header.css"><link rel="stylesheet" href="/assets/css/blog-post.css"><!-- Google Analytics (GA4) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-R1S53M0Q1W"></script> <script>(function(){const GA_ID = "G-R1S53M0Q1W";
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', GA_ID);
+
+  // 앱 다운로드(App Store / Google Play)로 향하는 모든 링크 클릭을 추적.
+  // 위임 방식이라 현재·미래의 모든 다운로드 버튼을 자동으로 커버합니다.
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href]');
+    if (!link) return;
+    var href = link.href || '';
+    var store = href.indexOf('apps.apple.com') > -1 ? 'app_store'
+              : href.indexOf('play.google.com') > -1 ? 'google_play' : null;
+    if (!store) return;
+    gtag('event', 'app_download_click', {
+      store: store,
+      link_url: href,
+      source_page: location.pathname
+    });
+  });
+})();</script></head> <body> <header class="site-header"> <div class="container"> <a class="logo-link" href="/"> <img src="/assets/images/logo.png" alt="일단공부 로고"> <span class="logo-text">일단공부</span> </a> <nav> <a href="/">홈</a> <a href="/words/">학습</a> <a href="/blog/">블로그</a> <a href="/notice/">공지사항</a> <a href="/qna/">Q&A</a> </nav> </div> </header> <div class="page-breadcrumb"> <div class="container"> <a href="/">일단공부</a> <span class="separator">›</span> <a href="/blog/">블로그</a> <span class="separator">›</span> <span>일당공부 v6.17.1 업데이트 안내</span> </div> </div> <main class="blog-post"> <header class="post-header"> <span class="category-badge">app-update</span> <h1>일당공부 v6.17.1 업데이트 안내</h1> <p class="meta">2026-06-30</p> </header> <article class="post-body"> <p>이번 업데이트에서는 iOS 이용자분들이 겪으셨던 리뷰 관련 불편을 수정했습니다.</p>
+<h2 id="수정된-문제">수정된 문제</h2>
+<h3 id="ios에서-리뷰-버튼을-눌러도-앱-스토어로-이동하지-않는-문제">iOS에서 리뷰 버튼을 눌러도 앱 스토어로 이동하지 않는 문제</h3>
+<p>리뷰 안내 팝업에서 <strong>OK</strong>를 눌러도 앱 스토어 리뷰 페이지로 이동하지 않는 문제가 있었습니다. iOS의 정책상 앱 내 리뷰 요청이 연간 최대 3회로 제한되어, 이 횟수를 초과하면 아무런 반응 없이 팝업만 닫히는 현상이 발생했습니다.</p>
+<p>이제 OK 버튼을 누르면 앱 스토어 리뷰 페이지로 바로 이동합니다.</p>
+<h3 id="리뷰-후에도-리뷰-요청이-반복되는-문제">리뷰 후에도 리뷰 요청이 반복되는 문제</h3>
+<p>리뷰를 완료한 뒤에도 앱을 열 때마다 다시 리뷰 안내 팝업이 표시되는 문제가 있었습니다. 이제 한 번 리뷰를 남기시면 이후에는 팝업이 표시되지 않습니다.</p>
+<hr>
+<p>항상 일당공부를 이용해 주셔서 감사합니다. 사용 중 불편한 점은 앱 내 문의 또는 앱 스토어 리뷰를 통해 알려주세요.</p> </article> <section class="cta"> <h2>일단공부 앱에서 더 학습하기</h2> <p>전체 JLPT N1~N5 단어와 음성 발음, 예문, 복습 기능을 일단공부 앱에서 만나보세요. 매일 적당한 분량의 단어 학습과 테스트, 약점 단어 자동 복습으로 일본어 단어 학습을 꾸준히 이어갈 수 있습니다.</p> <div class="cta-slider" aria-label="일단공부 앱 스크린샷"> <div class="cta-slider-track"> <img src="/assets/images/screenshots/screenshot-1.webp" alt="일단공부 앱 스크린샷 1" loading="lazy"> <img src="/assets/images/screenshots/screenshot-2.webp" alt="일단공부 앱 스크린샷 2" loading="lazy"> <img src="/assets/images/screenshots/screenshot-3.webp" alt="일단공부 앱 스크린샷 3" loading="lazy"> <img src="/assets/images/screenshots/screenshot-4.webp" alt="일단공부 앱 스크린샷 4" loading="lazy"> <img src="/assets/images/screenshots/screenshot-5.webp" alt="일단공부 앱 스크린샷 5" loading="lazy"> <img src="/assets/images/screenshots/screenshot-6.webp" alt="일단공부 앱 스크린샷 6" loading="lazy"> <img src="/assets/images/screenshots/screenshot-7.webp" alt="일단공부 앱 스크린샷 7" loading="lazy"> <img src="/assets/images/screenshots/screenshot-8.webp" alt="일단공부 앱 스크린샷 8" loading="lazy"> </div> <button type="button" class="cta-slider-btn cta-slider-btn-prev" aria-label="이전 스크린샷">‹</button> <button type="button" class="cta-slider-btn cta-slider-btn-next" aria-label="다음 스크린샷">›</button> </div> <div class="store-buttons"> <a href="https://apps.apple.com/app/ildangongbu/id1456091125" rel="nofollow" aria-label="App Store에서 다운로드"> <img src="/assets/images/appstore-apple.svg" alt="App Store에서 다운로드"> </a> <a href="https://play.google.com/store/apps/details?id=io.github.dev.yakuza.ildangongbu" rel="nofollow" aria-label="Google Play에서 다운로드"> <img src="/assets/images/appstore-android.svg" alt="Google Play에서 다운로드"> </a> </div> </section> </main> <footer class="site-footer"> <div class="container"> <div class="footer-links"> <a href="/">일단공부 홈</a> <a href="/words/">학습</a> <a href="/blog/">블로그</a> <a href="/notice/">공지사항</a> <a href="/qna/">Q&A</a> <a href="/privacy/ko/">개인정보 처리방침</a> </div> <p class="copyright">© Deku · 일단공부 · 일본어 학습</p> </div> </footer> <script src="/assets/js/word-page.js" defer></script> </body> </html>
