@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>v6.17.2 한자 획순 학습 및 저대비 문제 수정 - JLPT 일본어 단어 공부, 일단 공부</title>
-    <meta name="description" content="JLPT 일본어 단어 공부 앱 「일단 공부」 v6.17.2 업데이트 안내. 한자 획순 학습에서 중복 생성되던 이미지와 잘못된 획수 정보를 수정하고, 비활성화된 체크박스 라벨과 둥근 버튼의 저대비 문제를 개선했습니다." />
+    <title>v6.17.3 자동 동기화 안정성 및 여러 문제 수정 - JLPT 일본어 단어 공부, 일단 공부</title>
+    <meta name="description" content="JLPT 일본어 단어 공부 앱 「일단 공부」 v6.17.3 업데이트 안내. 구글 로그인 프리징과 자동 동기화 오류를 수정하고, 일부 사용자의 검색·퀴즈·메모 기능이 복구되지 않던 문제를 해결했습니다." />
     <meta name="author" content="dev.yakuza@gmail.com" />
-    <link rel="canonical" href="https://ildangongbu.posstree.com/notice/kanji-stroke-order-and-contrast-fix/" />
-    <meta property="og:url" content="https://ildangongbu.posstree.com/notice/kanji-stroke-order-and-contrast-fix/" />
+    <link rel="canonical" href="https://ildangongbu.posstree.com/notice/sync-stability-and-bugfixes/" />
+    <meta property="og:url" content="https://ildangongbu.posstree.com/notice/sync-stability-and-bugfixes/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="v6.17.2 한자 획순 학습 및 저대비 문제 수정 - JLPT 일본어 단어 공부, 일단 공부" />
+    <meta property="og:title" content="v6.17.3 자동 동기화 안정성 및 여러 문제 수정 - JLPT 일본어 단어 공부, 일단 공부" />
     <meta property="og:locale" content="ko_KR" />
-    <meta property="og:description" content="한자 획순 학습의 중복 이미지·잘못된 획수 정보와 비활성화된 체크박스·버튼의 저대비 문제를 수정했습니다." />
+    <meta property="og:description" content="구글 로그인 프리징, 자동 동기화 오탐, 검색·퀴즈·메모 복구 문제 등 여러 안정성 문제를 수정했습니다." />
     <meta property="og:site_name" content="JLPT 일본어 단어 공부, 일단 공부" />
     <meta property="og:image" content="https://ildangongbu.posstree.com/assets/images/share.png" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="v6.17.2 한자 획순 학습 및 저대비 문제 수정 - JLPT 일본어 단어 공부, 일단 공부" />
-    <meta name="twitter:description" content="한자 획순 학습의 중복 이미지·잘못된 획수 정보와 비활성화된 체크박스·버튼의 저대비 문제를 수정했습니다." />
+    <meta name="twitter:title" content="v6.17.3 자동 동기화 안정성 및 여러 문제 수정 - JLPT 일본어 단어 공부, 일단 공부" />
+    <meta name="twitter:description" content="구글 로그인 프리징, 자동 동기화 오탐, 검색·퀴즈·메모 복구 문제 등 여러 안정성 문제를 수정했습니다." />
     <meta name="twitter:image" content="https://ildangongbu.posstree.com/assets/images/share.png" />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1S53M0Q1W"></script>
@@ -84,28 +84,43 @@
         <div class="notice-detail">
           <div class="notice-meta">
             <span class="notice-badge update">업데이트</span>
-            2026.07.25
+            2026.08.15
           </div>
-          <h3 class="notice-title">v6.17.2 - 한자 획순 학습 및 저대비 문제 수정</h3>
+          <h3 class="notice-title">v6.17.3 - 자동 동기화 안정성 및 여러 문제 수정</h3>
           <div class="notice-body">
             <p>안녕하세요, 「JLPT 일본어 단어 공부, 일단 공부」 개발자 Deku입니다.</p>
-            <p>한자 획순 학습과 화면 가독성을 다듬은 v6.17.2를 배포했습니다.</p>
+            <p>자동 동기화 안정성을 강화하고 여러 크래시·버그를 수정한 v6.17.3을 배포했습니다.</p>
 
             <h5>수정된 문제</h5>
 
             <div class="feature-card">
-              <div class="feature-card-title"><i class="fas fa-pen-nib mr-2"></i>한자 획순 학습 이미지·획수 정보 오류</div>
-              <p style="margin-bottom:0;">한자 획순 학습에서 이미지가 <strong>중복으로 생성</strong>되거나 <strong>잘못된 획수 정보</strong>가 표시되던 문제를 수정했습니다. 이제 정확한 획순 이미지와 획수로 학습하실 수 있습니다.</p>
+              <div class="feature-card-title"><i class="fab fa-google mr-2"></i>구글 로그인 버튼 눌렀을 때 앱 멈춤</div>
+              <p style="margin-bottom:0;">구글 로그인 버튼을 눌렀을 때 앱이 <strong>멈추는(프리징)</strong> 문제를 수정했습니다.</p>
             </div>
 
             <div class="feature-card">
-              <div class="feature-card-title"><i class="fas fa-check-square mr-2"></i>비활성화된 체크박스 라벨 저대비 문제</div>
-              <p style="margin-bottom:0;">라이트 테마에서 비활성화된 체크박스 라벨의 글자가 배경과 잘 구분되지 않던 <strong>저대비 문제</strong>를 수정했습니다.</p>
+              <div class="feature-card-title"><i class="fas fa-sync-alt mr-2"></i>자동 동기화 오작동 수정</div>
+              <p style="margin-bottom:0;">앱을 오래 켜두면 자동 동기화가 <strong>로그인 만료 오류로 잘못 중단</strong>되던 문제와, 네트워크가 일시적으로 끊겼을 때 동기화가 <strong>실패로 잘못 표시</strong>되던 문제를 수정했습니다.</p>
             </div>
 
             <div class="feature-card">
-              <div class="feature-card-title"><i class="fas fa-adjust mr-2"></i>비활성화된 둥근 버튼 저대비 문제</div>
-              <p style="margin-bottom:0;">라이트·다크 테마 모두에서 비활성화된 둥근 버튼의 <strong>저대비 문제</strong>를 수정해 가독성을 개선했습니다.</p>
+              <div class="feature-card-title"><i class="fas fa-database mr-2"></i>검색·퀴즈·단어 목록·메모 자동 복구</div>
+              <p style="margin-bottom:0;">예전부터 앱을 사용해 온 일부 사용자에게서 단어 검색, 퀴즈, 단어 목록, 메모 수정이 되지 않던 문제를 수정했습니다. 업데이트 후 앱을 실행하면 <strong>자동으로 복구</strong>되며 기존 학습 데이터는 그대로 유지됩니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-mobile-alt mr-2"></i>iOS 실행 속도 개선</div>
+              <p style="margin-bottom:0;">iOS에서 앱을 실행할 때 첫 화면이 표시되기까지 <strong>오래 걸리던 문제</strong>를 개선했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-search mr-2"></i>검색 화면 강제 종료 수정</div>
+              <p style="margin-bottom:0;">검색어를 입력한 직후 뒤로 가면 앱이 <strong>강제 종료</strong>되던 문제를 수정했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-volume-up mr-2"></i>실행 멈춤·발음 오답 목록 표시 수정</div>
+              <p style="margin-bottom:0;">일부 기기에서 앱 실행이 멈추거나 <strong>발음 오답 단어 목록이 비어 보이던 문제</strong>를 수정했습니다.</p>
             </div>
 
             <p>항상 일단공부를 이용해 주셔서 감사합니다. 사용 중 불편한 점은 앱 스토어 리뷰를 통해 알려주세요.</p>
@@ -113,8 +128,8 @@
         </div>
 
         <div class="notice-nav">
-          <a href="../sync-stability-and-bugfixes/"><i class="fas fa-chevron-left ml-1"></i>이전 글</a>
-          <a href="../ios-review-button-fix/"><i class="fas fa-chevron-right mr-1"></i>다음 글</a>
+          <span></span>
+          <a href="../kanji-stroke-order-and-contrast-fix/"><i class="fas fa-chevron-right mr-1"></i>다음 글</a>
         </div>
 
       </div>
