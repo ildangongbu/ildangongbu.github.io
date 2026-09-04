@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>v6.17.4 반복 듣기 설정 추가 및 안드로이드 로그인 문제 수정 - JLPT 일본어 단어 공부, 일단 공부</title>
-    <meta name="description" content="JLPT 일본어 단어 공부 앱 「일단 공부」 v6.17.4 업데이트 안내. 반복 듣기에서 단어·뜻·예문별 반복 횟수와 간격을 직접 설정할 수 있게 되었고, 안드로이드에서 로그아웃 후 재로그인하거나 기기를 변경했을 때 로그인이 되지 않던 문제를 수정했습니다." />
+    <title>v6.17.5 계정 동기화 안전성 강화 및 접근성 개선 - JLPT 일본어 단어 공부, 일단 공부</title>
+    <meta name="description" content="JLPT 일본어 단어 공부 앱 「일단 공부」 v6.17.5 업데이트 안내. 다른 구글 계정으로 전환된 상태에서 학습 데이터가 섞이던 문제를 비롯해 동기화 중 발생할 수 있던 계정 혼선 문제를 수정하고, 설정 화면 슬라이더의 스크린 리더 지원을 개선했습니다." />
     <meta name="author" content="dev.yakuza@gmail.com" />
-    <link rel="canonical" href="https://ildangongbu.posstree.com/notice/repeat-listening-and-android-login-fix/" />
-    <meta property="og:url" content="https://ildangongbu.posstree.com/notice/repeat-listening-and-android-login-fix/" />
+    <link rel="canonical" href="https://ildangongbu.posstree.com/notice/account-sync-safety-and-accessibility/" />
+    <meta property="og:url" content="https://ildangongbu.posstree.com/notice/account-sync-safety-and-accessibility/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="v6.17.4 반복 듣기 설정 추가 및 안드로이드 로그인 문제 수정 - JLPT 일본어 단어 공부, 일단 공부" />
+    <meta property="og:title" content="v6.17.5 계정 동기화 안전성 강화 및 접근성 개선 - JLPT 일본어 단어 공부, 일단 공부" />
     <meta property="og:locale" content="ko_KR" />
-    <meta property="og:description" content="반복 듣기 반복 횟수·간격 설정 기능 추가, 안드로이드 재로그인/기기변경 로그인 실패 문제 수정." />
+    <meta property="og:description" content="다른 계정으로 전환된 상태에서 데이터가 섞이던 문제 등 동기화 계정 혼선 수정, 설정 슬라이더 스크린 리더 지원 개선." />
     <meta property="og:site_name" content="JLPT 일본어 단어 공부, 일단 공부" />
     <meta property="og:image" content="https://ildangongbu.posstree.com/assets/images/share.png" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="v6.17.4 반복 듣기 설정 추가 및 안드로이드 로그인 문제 수정 - JLPT 일본어 단어 공부, 일단 공부" />
-    <meta name="twitter:description" content="반복 듣기 반복 횟수·간격 설정 기능 추가, 안드로이드 재로그인/기기변경 로그인 실패 문제 수정." />
+    <meta name="twitter:title" content="v6.17.5 계정 동기화 안전성 강화 및 접근성 개선 - JLPT 일본어 단어 공부, 일단 공부" />
+    <meta name="twitter:description" content="다른 계정으로 전환된 상태에서 데이터가 섞이던 문제 등 동기화 계정 혼선 수정, 설정 슬라이더 스크린 리더 지원 개선." />
     <meta name="twitter:image" content="https://ildangongbu.posstree.com/assets/images/share.png" />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1S53M0Q1W"></script>
@@ -84,25 +84,40 @@
         <div class="notice-detail">
           <div class="notice-meta">
             <span class="notice-badge update">업데이트</span>
-            2026.08.18
+            2026.09.04
           </div>
-          <h3 class="notice-title">v6.17.4 - 반복 듣기 설정 추가 및 안드로이드 로그인 문제 수정</h3>
+          <h3 class="notice-title">v6.17.5 - 계정 동기화 안전성 강화 및 접근성 개선</h3>
           <div class="notice-body">
             <p>안녕하세요, 「JLPT 일본어 단어 공부, 일단 공부」 개발자 Deku입니다.</p>
-            <p>반복 듣기 기능을 더 세밀하게 설정할 수 있도록 개선하고, 안드로이드에서 로그인이 되지 않던 문제를 수정한 v6.17.4를 배포했습니다.</p>
+            <p>구글 계정과 데이터를 동기화할 때 발생할 수 있던 계정 혼선 문제를 집중적으로 수정하고, 설정 화면의 접근성을 개선한 v6.17.5를 배포했습니다.</p>
 
             <h5>새로워진 점</h5>
 
             <div class="feature-card">
-              <div class="feature-card-title"><i class="fas fa-headphones-alt mr-2"></i>반복 듣기 반복 횟수·간격 직접 설정</div>
-              <p style="margin-bottom:0;">단어 화면 반복 듣기에서 단어·뜻·예문별로 <strong>반복 횟수</strong>와 반복 사이의 <strong>간격(pause)</strong>을 원하는 대로 설정할 수 있게 되었습니다.</p>
+              <div class="feature-card-title"><i class="fas fa-universal-access mr-2"></i>설정 화면 슬라이더 스크린 리더 지원 개선</div>
+              <p style="margin-bottom:0;">설정 화면의 <strong>글자 크기·음량·속도</strong> 슬라이더를 스크린 리더로 더 명확하게 확인할 수 있도록 개선했습니다.</p>
             </div>
 
             <h5>수정된 문제</h5>
 
             <div class="feature-card">
-              <div class="feature-card-title"><i class="fab fa-google mr-2"></i>안드로이드 재로그인·기기변경 시 로그인 실패</div>
-              <p style="margin-bottom:0;">안드로이드에서 <strong>로그아웃 후 다시 로그인</strong>하거나 <strong>기기를 변경</strong>했을 때 구글 로그인이 되지 않던 문제를 수정했습니다. 기존에 로그인된 상태를 유지 중이던 분들은 영향받지 않았습니다.</p>
+              <div class="feature-card-title"><i class="fab fa-google mr-2"></i>다른 계정으로 전환된 상태에서 데이터가 섞이던 문제</div>
+              <p style="margin-bottom:0;">기기에서 <strong>다른 구글 계정으로 전환된 상태</strong>일 때 동기화나 데이터 업로드·다운로드가 그대로 실행되어, 학습 데이터가 의도하지 않은 계정과 섞일 수 있던 문제를 수정했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-sync-alt mr-2"></i>동기화 중 로그인·로그아웃 시 계정 혼선</div>
+              <p style="margin-bottom:0;">데이터 동기화 중에 <strong>로그인이나 로그아웃을 시도</strong>하거나 <strong>로그인이 자동으로 갱신</strong>될 때 발생할 수 있던 계정 혼선 문제를 수정했습니다. 로그인과 로그아웃을 <strong>짧은 간격으로 연달아</strong> 시도할 때 계정 상태가 꼬이던 문제도 함께 수정했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-cloud-download-alt mr-2"></i>데이터 복원 중 로그인 만료 시 복원 실패</div>
+              <p style="margin-bottom:0;">데이터를 복원하는 중에 <strong>로그인 정보가 만료</strong>되었을 때 로그아웃되거나 복원이 실패하던 문제를 수정했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-shield-alt mr-2"></i>가나 퀴즈 화면 앱 종료 문제 예방</div>
+              <p style="margin-bottom:0;">가나 퀴즈 화면에서 발생할 수 있던 <strong>앱 종료 문제</strong>를 미리 방지했습니다.</p>
             </div>
 
             <p>항상 일단공부를 이용해 주셔서 감사합니다. 사용 중 불편한 점은 앱 스토어 리뷰를 통해 알려주세요.</p>
@@ -110,8 +125,8 @@
         </div>
 
         <div class="notice-nav">
-          <a href="../account-sync-safety-and-accessibility/"><i class="fas fa-chevron-left ml-1"></i>이전 글</a>
-          <a href="../sync-stability-and-bugfixes/"><i class="fas fa-chevron-right mr-1"></i>다음 글</a>
+          <span></span>
+          <a href="../repeat-listening-and-android-login-fix/"><i class="fas fa-chevron-right mr-1"></i>다음 글</a>
         </div>
 
       </div>
