@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>v6.17.6 계정 전환 안정화 및 접근성·화면 이동 문제 수정 - JLPT 일본어 단어 공부, 일단 공부</title>
+    <meta name="description" content="JLPT 일본어 단어 공부 앱 「일단 공부」 v6.17.6 업데이트 안내. 구글 동기화와 계정 전환을 안정화하고, 스크린 리더 등 앱의 접근성을 향상시켰습니다. 화면 이동 중 다른 화면으로 잘못 넘어가던 문제와 누락된 번역도 함께 수정했습니다." />
+    <meta name="author" content="dev.yakuza@gmail.com" />
+    <link rel="canonical" href="https://ildangongbu.posstree.com/notice/account-switching-accessibility-and-navigation-fix/" />
+    <meta property="og:url" content="https://ildangongbu.posstree.com/notice/account-switching-accessibility-and-navigation-fix/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="v6.17.6 계정 전환 안정화 및 접근성·화면 이동 문제 수정 - JLPT 일본어 단어 공부, 일단 공부" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:description" content="구글 동기화·계정 전환 안정화, 스크린 리더 접근성 향상, 화면 이동 오류 및 누락 번역 수정." />
+    <meta property="og:site_name" content="JLPT 일본어 단어 공부, 일단 공부" />
+    <meta property="og:image" content="https://ildangongbu.posstree.com/assets/images/share.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="v6.17.6 계정 전환 안정화 및 접근성·화면 이동 문제 수정 - JLPT 일본어 단어 공부, 일단 공부" />
+    <meta name="twitter:description" content="구글 동기화·계정 전환 안정화, 스크린 리더 접근성 향상, 화면 이동 오류 및 누락 번역 수정." />
+    <meta name="twitter:image" content="https://ildangongbu.posstree.com/assets/images/share.png" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1S53M0Q1W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-R1S53M0Q1W');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Nunito:400,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet" />
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/theme.css" />
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/custom.css" />
+
+    <style>
+      .page-header { background-color: #ec174f; padding: 2rem 0; color: #fff; }
+      .page-header h2 { margin-bottom: 0; color: #fff; }
+      .back-link { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.95rem; }
+      .back-link:hover { color: #fff; text-decoration: none; }
+      .notice-detail { max-width: 800px; margin: 0 auto; }
+      .notice-detail .notice-badge { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 4px; margin-right: 0.5rem; }
+      .notice-badge.update { background-color: #e3f2fd; color: #1565c0; }
+      .notice-detail .notice-meta { color: #999; font-size: 0.9rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
+      .notice-detail .notice-title { font-size: 1.5rem; font-weight: 700; color: #333; margin-bottom: 1rem; }
+      .notice-detail .notice-body { color: #555; font-size: 1rem; line-height: 1.9; }
+      .notice-detail .notice-body h5 { font-weight: 700; color: #333; margin-top: 2rem; margin-bottom: 1rem; }
+      .feature-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+      .feature-card-title { font-weight: 700; color: #ec174f; margin-bottom: 0.5rem; }
+      .notice-nav { max-width: 800px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid #eee; display: flex; justify-content: space-between; }
+      .notice-nav a { color: #ec174f; text-decoration: none; font-weight: 600; }
+      .notice-nav a:hover { text-decoration: underline; }
+    </style>
+  <script>document.addEventListener('click',function(e){var link=e.target.closest&&e.target.closest('a[href]');if(!link)return;var href=link.href||'';var store=href.indexOf('apps.apple.com')>-1?'app_store':href.indexOf('play.google.com')>-1?'google_play':null;if(!store)return;gtag('event','app_download_click',{store:store,link_url:href,source_page:location.pathname});});</script>
+</head>
+
+  <body>
+    <header class="header">
+      <div class="branding">
+        <div class="container position-relative">
+          <nav class="navbar navbar-expand-lg">
+            <h1 class="site-logo">
+              <a class="navbar-brand" href="/">
+                <img class="logo-icon" src="../../assets/images/logo.png" alt="일단공부 로고" />
+                <span class="logo-text">일단공부</span>
+              </a>
+            </h1>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <a href="/notice/" class="back-link"><i class="fas fa-arrow-left mr-2"></i>공지사항 목록</a>
+        <h2 class="font-weight-bold mt-2">공지사항</h2>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="notice-detail">
+          <div class="notice-meta">
+            <span class="notice-badge update">업데이트</span>
+            2026.09.20
+          </div>
+          <h3 class="notice-title">v6.17.6 - 계정 전환 안정화 및 접근성·화면 이동 문제 수정</h3>
+          <div class="notice-body">
+            <p>안녕하세요, 「JLPT 일본어 단어 공부, 일단 공부」 개발자 Deku입니다.</p>
+            <p>구글 동기화와 계정 전환을 한층 더 안정화하고, 스크린 리더 사용자를 위한 접근성을 폭넓게 개선한 v6.17.6을 배포했습니다. 화면 이동 중 다른 화면으로 잘못 넘어가던 문제와 누락된 번역도 함께 수정했습니다.</p>
+
+            <h5>새로워진 점</h5>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fab fa-google mr-2"></i>계정이 맞지 않을 때 안내와 복구 동선 정리</div>
+              <p style="margin-bottom:0;">동기화에 사용 중인 구글 계정과 <strong>기기의 로그인 계정이 다를 때</strong> 표시되는 안내를 모든 경로에서 동일하게 통일하고, 이로 인해 동기화가 막힌 경우에는 <strong>계정을 다시 선택해 복구할 수 있는 동선</strong>을 안내합니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-universal-access mr-2"></i>스크린 리더 접근성 향상</div>
+              <p style="margin-bottom:0;">단원 정렬·테마 전환 버튼의 <strong>켜짐/꺼짐 상태</strong>, 북마크 버튼의 <strong>선택 상태와 탭·길게 누르기 동작</strong>을 스크린 리더가 올바르게 읽어 주도록 개선했습니다. 일부 버튼이 스크린 리더로는 탭할 수 없던 문제와, 카테고리 라벨이 잘못된 동작을 안내하던 문제도 함께 수정했습니다.</p>
+            </div>
+
+            <h5>수정된 문제</h5>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-sync-alt mr-2"></i>다른 계정으로 전환된 상태에서 데이터가 섞이던 문제</div>
+              <p style="margin-bottom:0;">데이터 업로드를 시작할 때 <strong>신뢰된 계정인지 한 번 더 확인</strong>하여, 기기에서 다른 구글 계정으로 전환된 상태에서 학습 데이터가 의도하지 않은 계정에 올라가던 문제를 차단했습니다. 로그아웃 등 세션 정리 과정에서 불필요한 권한 요청이 뜨거나 실패 안내가 누락되던 문제도 정리했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-route mr-2"></i>화면 이동 중 다른 화면으로 잘못 넘어가던 문제</div>
+              <p style="margin-bottom:0;">단어 편집 저장 등 <strong>처리가 진행되는 동안 뒤로가기</strong>를 누르면, 처리가 끝난 뒤 화면이 한 번 더 닫히며 의도하지 않은 화면으로 이동하던 문제를 수정했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-language mr-2"></i>누락된 번역 보완</div>
+              <p style="margin-bottom:0;">한국어·영어·일본어 사이에서 <strong>일부 문구가 번역되지 않고 표시되던 문제</strong>를 보완했습니다.</p>
+            </div>
+
+            <p>항상 일단공부를 이용해 주셔서 감사합니다. 사용 중 불편한 점은 앱 스토어 리뷰를 통해 알려주세요.</p>
+          </div>
+        </div>
+
+        <div class="notice-nav">
+          <span></span>
+          <a href="../account-sync-safety-and-accessibility/"><i class="fas fa-chevron-right mr-1"></i>다음 글</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-section py-5 theme-bg-secondary text-center">
+      <div class="container">
+        <h3 class="text-white font-weight-bold mb-3">
+          일본어 단어 공부, 「일단공부」해 보세요!
+        </h3>
+        <div class="cta-btns">
+          <ul class="app-stores list-unstyled list-inline mx-auto d-inline-block">
+            <li class="list-inline-item mr-3">
+              <a href="https://apps.apple.com/app/ildangongbu/id1456091125" target="_blank">
+                <img class="ios" src="../../assets/images/appstore-apple.svg" alt="App Store에서 다운로드" />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://play.google.com/store/apps/details?id=io.github.dev.yakuza.ildangongbu" target="_blank">
+                <img class="android" src="../../assets/images/appstore-android.svg" alt="Google Play에서 다운로드" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://ildangongbu.posstree.com/privacy/ko/" target="_blank" class="text-dark">개인정보 처리방침</a>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="../../assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
