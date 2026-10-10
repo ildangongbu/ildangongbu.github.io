@@ -163,8 +163,14 @@
 }
 
 /* ---------- 본문 이미지 (도해·사진) ---------- */
+/* 기본: 어떤 이미지도 본문 폭을 넘지 않음 (img의 width 속성은 원본 픽셀 크기) */
+.blog-post .post-body img {
+  max-width: 100%;
+  height: auto;
+}
+
 .blog-post .post-body .post-figure {
-  margin: 2rem 0;
+  margin: 2rem auto;
   text-align: center;
 }
 
@@ -175,6 +181,17 @@
   height: auto;
   margin: 0 auto;
   border-radius: 12px;
+}
+
+/* 도해: 720px 기준으로 그려져 본문 폭 그대로면 글자가 본문보다 커짐 → 데스크톱에서는 축소 */
+.blog-post .post-body .post-figure--diagram {
+  max-width: 560px;
+}
+
+/* 세로로 긴 이미지(캐릭터 등): 화면을 가득 채우지 않도록 높이 제한 */
+.blog-post .post-body .post-figure--portrait img {
+  width: auto;
+  max-height: 480px;
 }
 
 .blog-post .post-body .post-figure figcaption {
@@ -188,6 +205,15 @@
   display: block;
   font-size: 0.78rem;
   color: #adb5bd;
+}
+
+@media (max-width: 600px) {
+  .blog-post .post-body .post-figure--diagram {
+    max-width: 100%;
+  }
+  .blog-post .post-body .post-figure--portrait img {
+    max-height: 420px;
+  }
 }
 
 /* ---------- CTA (단어 페이지와 동일: 텍스트 → 스크린샷 슬라이더 → 버튼) ---------- */
