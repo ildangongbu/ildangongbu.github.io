@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>v6.17.9 복습 퀴즈·학습 알림·화면 닫힘 문제 수정 - JLPT 일본어 단어 공부, 일단 공부</title>
+    <meta name="description" content="JLPT 일본어 단어 공부 앱 「일단 공부」 v6.17.9 업데이트 안내. 복습 퀴즈 선택지가 빈칸으로 보이던 문제와 안내 메시지가 떠 있을 때 결제 창·화면이 닫히지 않던 문제를 수정하고, 학습 알림 설정과 단어 수정 화면, 접근성을 개선했습니다." />
+    <meta name="author" content="dev.yakuza@gmail.com" />
+    <link rel="canonical" href="https://ildangongbu.posstree.com/notice/review-quiz-notification-and-screen-fixes/" />
+    <meta property="og:url" content="https://ildangongbu.posstree.com/notice/review-quiz-notification-and-screen-fixes/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="v6.17.9 복습 퀴즈·학습 알림·화면 닫힘 문제 수정 - JLPT 일본어 단어 공부, 일단 공부" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:description" content="복습 퀴즈 빈칸 선택지 수정, 학습 알림 안정화, 결제 창·화면 닫힘 문제 수정, 단어 수정 화면과 접근성 개선." />
+    <meta property="og:site_name" content="JLPT 일본어 단어 공부, 일단 공부" />
+    <meta property="og:image" content="https://ildangongbu.posstree.com/assets/images/share.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="v6.17.9 복습 퀴즈·학습 알림·화면 닫힘 문제 수정 - JLPT 일본어 단어 공부, 일단 공부" />
+    <meta name="twitter:description" content="복습 퀴즈 빈칸 선택지 수정, 학습 알림 안정화, 결제 창·화면 닫힘 문제 수정, 단어 수정 화면과 접근성 개선." />
+    <meta name="twitter:image" content="https://ildangongbu.posstree.com/assets/images/share.png" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1S53M0Q1W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-R1S53M0Q1W');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Nunito:400,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet" />
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/theme.css" />
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/custom.css" />
+
+    <style>
+      .page-header { background-color: #ec174f; padding: 2rem 0; color: #fff; }
+      .page-header h2 { margin-bottom: 0; color: #fff; }
+      .back-link { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.95rem; }
+      .back-link:hover { color: #fff; text-decoration: none; }
+      .notice-detail { max-width: 800px; margin: 0 auto; }
+      .notice-detail .notice-badge { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 4px; margin-right: 0.5rem; }
+      .notice-badge.update { background-color: #e3f2fd; color: #1565c0; }
+      .notice-detail .notice-meta { color: #999; font-size: 0.9rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
+      .notice-detail .notice-title { font-size: 1.5rem; font-weight: 700; color: #333; margin-bottom: 1rem; }
+      .notice-detail .notice-body { color: #555; font-size: 1rem; line-height: 1.9; }
+      .notice-detail .notice-body h5 { font-weight: 700; color: #333; margin-top: 2rem; margin-bottom: 1rem; }
+      .feature-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+      .feature-card-title { font-weight: 700; color: #ec174f; margin-bottom: 0.5rem; }
+      .notice-nav { max-width: 800px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid #eee; display: flex; justify-content: space-between; }
+      .notice-nav a { color: #ec174f; text-decoration: none; font-weight: 600; }
+      .notice-nav a:hover { text-decoration: underline; }
+    </style>
+  <script>document.addEventListener('click',function(e){var link=e.target.closest&&e.target.closest('a[href]');if(!link)return;var href=link.href||'';var store=href.indexOf('apps.apple.com')>-1?'app_store':href.indexOf('play.google.com')>-1?'google_play':null;if(!store)return;gtag('event','app_download_click',{store:store,link_url:href,source_page:location.pathname});});</script>
+</head>
+
+  <body>
+    <header class="header">
+      <div class="branding">
+        <div class="container position-relative">
+          <nav class="navbar navbar-expand-lg">
+            <h1 class="site-logo">
+              <a class="navbar-brand" href="/">
+                <img class="logo-icon" src="../../assets/images/logo.png" alt="일단공부 로고" />
+                <span class="logo-text">일단공부</span>
+              </a>
+            </h1>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <a href="/notice/" class="back-link"><i class="fas fa-arrow-left mr-2"></i>공지사항 목록</a>
+        <h2 class="font-weight-bold mt-2">공지사항</h2>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="notice-detail">
+          <div class="notice-meta">
+            <span class="notice-badge update">업데이트</span>
+            2026.10.12
+          </div>
+          <h3 class="notice-title">v6.17.9 - 복습 퀴즈·학습 알림·화면 닫힘 문제 수정</h3>
+          <div class="notice-body">
+            <p>안녕하세요, 「JLPT 일본어 단어 공부, 일단 공부」 개발자 Deku입니다.</p>
+            <p>복습 퀴즈와 학습 알림, 화면이 닫히지 않던 문제 등을 수정한 v6.17.9를 배포했습니다. 불편을 겪으신 분들께 죄송하다는 말씀을 드립니다.</p>
+
+            <h5>수정 및 개선 사항</h5>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-check-square mr-2"></i>복습 퀴즈 선택지 빈칸 문제 수정</div>
+              <p style="margin-bottom:0;">복습 퀴즈에서 일부 단어의 <strong>오답 선택지가 빈칸으로 표시되던</strong> 문제를 수정했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-bell mr-2"></i>학습 알림 설정 안정화</div>
+              <p style="margin-bottom:0;">학습 알림 설정이 더 안정적으로 동작하도록 개선했습니다. 알림 시각을 처음 정할 때 <strong>알림 권한 요청이 빠지던</strong> 문제를 수정했고, 앱이 화면에 보이지 않는 동안 알림 권한 요청이 실패하면 <strong>앱으로 돌아왔을 때 한 번 다시 요청</strong>합니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-window-close mr-2"></i>결제 창·화면이 닫히지 않던 문제 수정</div>
+              <p style="margin-bottom:0;">화면 아래에 <strong>안내 메시지가 떠 있으면</strong> 결제 창이나 일부 화면이 닫히지 않던 문제를 수정했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-edit mr-2"></i>단어 수정 화면 개선</div>
+              <p style="margin-bottom:0;">단어 수정 화면에서 <strong>키보드를 연 채 스크롤하면 저장 버튼이 밀려나던</strong> 문제를 수정했습니다. 저장에 실패하면 안내 메시지로 알려 드립니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-universal-access mr-2"></i>접근성·문구 개선</div>
+              <p style="margin-bottom:0;">메뉴 버튼의 <strong>열림·닫힘 상태를 스크린 리더에 전달</strong>하도록 개선했고, 한국어 설정 화면의 문구 띄어쓰기를 바로잡았습니다.</p>
+            </div>
+
+            <p>항상 일단공부를 이용해 주셔서 감사합니다. 사용 중 불편한 점은 앱 스토어 리뷰를 통해 알려주세요.</p>
+          </div>
+        </div>
+
+        <div class="notice-nav">
+          <span></span>
+          <a href="../stability-quiz-choices-and-drive-sync-improvements/"><i class="fas fa-chevron-right mr-1"></i>다음 글</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-section py-5 theme-bg-secondary text-center">
+      <div class="container">
+        <h3 class="text-white font-weight-bold mb-3">
+          일본어 단어 공부, 「일단공부」해 보세요!
+        </h3>
+        <div class="cta-btns">
+          <ul class="app-stores list-unstyled list-inline mx-auto d-inline-block">
+            <li class="list-inline-item mr-3">
+              <a href="https://apps.apple.com/app/ildangongbu/id1456091125" target="_blank">
+                <img class="ios" src="../../assets/images/appstore-apple.svg" alt="App Store에서 다운로드" />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://play.google.com/store/apps/details?id=io.github.dev.yakuza.ildangongbu" target="_blank">
+                <img class="android" src="../../assets/images/appstore-android.svg" alt="Google Play에서 다운로드" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://ildangongbu.posstree.com/privacy/ko/" target="_blank" class="text-dark">개인정보 처리방침</a>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="../../assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
