@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>v6.18.0 예문 읽기 「지금은 말할 수 없어요」·복습 퀴즈 개선 - JLPT 일본어 단어 공부, 일단 공부</title>
+    <meta name="description" content="JLPT 일본어 단어 공부 앱 「일단 공부」 v6.18.0 업데이트 안내. 예문 읽기에 「지금은 말할 수 없어요」 버튼이 생겼고, 복습 퀴즈 화면·선택지와 하단 버튼을 개선했으며, 구글 동기화·로그인·구독 기능을 안정화했습니다." />
+    <meta name="author" content="dev.yakuza@gmail.com" />
+    <link rel="canonical" href="https://ildangongbu.posstree.com/notice/example-reading-cannot-speak-and-quiz-improvements/" />
+    <meta property="og:url" content="https://ildangongbu.posstree.com/notice/example-reading-cannot-speak-and-quiz-improvements/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="v6.18.0 예문 읽기 「지금은 말할 수 없어요」·복습 퀴즈 개선 - JLPT 일본어 단어 공부, 일단 공부" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:description" content="예문 읽기 「지금은 말할 수 없어요」 버튼 추가, 복습 퀴즈 화면·선택지·하단 버튼 개선, 구글 동기화·로그인·구독 안정화." />
+    <meta property="og:site_name" content="JLPT 일본어 단어 공부, 일단 공부" />
+    <meta property="og:image" content="https://ildangongbu.posstree.com/assets/images/share.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="v6.18.0 예문 읽기 「지금은 말할 수 없어요」·복습 퀴즈 개선 - JLPT 일본어 단어 공부, 일단 공부" />
+    <meta name="twitter:description" content="예문 읽기 「지금은 말할 수 없어요」 버튼 추가, 복습 퀴즈 화면·선택지·하단 버튼 개선, 구글 동기화·로그인·구독 안정화." />
+    <meta name="twitter:image" content="https://ildangongbu.posstree.com/assets/images/share.png" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1S53M0Q1W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-R1S53M0Q1W');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Nunito:400,600,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet" />
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/theme.css" />
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/custom.css" />
+
+    <style>
+      .page-header { background-color: #ec174f; padding: 2rem 0; color: #fff; }
+      .page-header h2 { margin-bottom: 0; color: #fff; }
+      .back-link { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.95rem; }
+      .back-link:hover { color: #fff; text-decoration: none; }
+      .notice-detail { max-width: 800px; margin: 0 auto; }
+      .notice-detail .notice-badge { display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 4px; margin-right: 0.5rem; }
+      .notice-badge.update { background-color: #e3f2fd; color: #1565c0; }
+      .notice-detail .notice-meta { color: #999; font-size: 0.9rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #eee; }
+      .notice-detail .notice-title { font-size: 1.5rem; font-weight: 700; color: #333; margin-bottom: 1rem; }
+      .notice-detail .notice-body { color: #555; font-size: 1rem; line-height: 1.9; }
+      .notice-detail .notice-body h5 { font-weight: 700; color: #333; margin-top: 2rem; margin-bottom: 1rem; }
+      .feature-card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+      .feature-card-title { font-weight: 700; color: #ec174f; margin-bottom: 0.5rem; }
+      .notice-nav { max-width: 800px; margin: 2rem auto 0; padding-top: 1.5rem; border-top: 1px solid #eee; display: flex; justify-content: space-between; }
+      .notice-nav a { color: #ec174f; text-decoration: none; font-weight: 600; }
+      .notice-nav a:hover { text-decoration: underline; }
+    </style>
+  <script>document.addEventListener('click',function(e){var link=e.target.closest&&e.target.closest('a[href]');if(!link)return;var href=link.href||'';var store=href.indexOf('apps.apple.com')>-1?'app_store':href.indexOf('play.google.com')>-1?'google_play':null;if(!store)return;gtag('event','app_download_click',{store:store,link_url:href,source_page:location.pathname});});</script>
+</head>
+
+  <body>
+    <header class="header">
+      <div class="branding">
+        <div class="container position-relative">
+          <nav class="navbar navbar-expand-lg">
+            <h1 class="site-logo">
+              <a class="navbar-brand" href="/">
+                <img class="logo-icon" src="../../assets/images/logo.png" alt="일단공부 로고" />
+                <span class="logo-text">일단공부</span>
+              </a>
+            </h1>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <a href="/notice/" class="back-link"><i class="fas fa-arrow-left mr-2"></i>공지사항 목록</a>
+        <h2 class="font-weight-bold mt-2">공지사항</h2>
+      </div>
+    </section>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="notice-detail">
+          <div class="notice-meta">
+            <span class="notice-badge update">업데이트</span>
+            2026.11.11
+          </div>
+          <h3 class="notice-title">v6.18.0 - 예문 읽기 「지금은 말할 수 없어요」·복습 퀴즈 개선</h3>
+          <div class="notice-body">
+            <p>안녕하세요, 「JLPT 일본어 단어 공부, 일단 공부」 개발자 Deku입니다.</p>
+            <p>예문 읽기에 「지금은 말할 수 없어요」 버튼을 추가하고, 복습 퀴즈를 더 편하게 다듬은 v6.18.0을 배포했습니다.</p>
+
+            <h5>새로운 기능</h5>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-microphone-slash mr-2"></i>예문 읽기 「지금은 말할 수 없어요」</div>
+              <p style="margin-bottom:0;">소리 내어 말하기 어려운 곳에서는 예문 읽기 문제의 <strong>「지금은 말할 수 없어요」</strong> 버튼을 눌러 주세요. 오답으로 기록하지 않고 같은 단어를 <strong>뜻 맞히기 문제로 풀 수 있으며</strong>, 이번 복습이 끝날 때까지 예문 읽기 문제가 나오지 않습니다. 다음 복습부터는 예문 읽기가 다시 나옵니다.</p>
+            </div>
+
+            <h5>수정 및 개선 사항</h5>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-th-large mr-2"></i>복습 퀴즈 화면·선택지 개선</div>
+              <p style="margin-bottom:0;">4지선다 문제에서 답을 고른 뒤 <strong>아래 줄 선택지가 가려져 잘려 보이던</strong> 문제를 수정했습니다. 짧은 정답의 선택지가 <strong>더 다양하게</strong> 나오도록 했고, 예문 읽기에서 모르는 문제의 <strong>오답 수가 두 번 세어지던</strong> 문제도 수정했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-hand-pointer mr-2"></i>퀴즈 하단 버튼 사용성 개선</div>
+              <p style="margin-bottom:0;">「잘 모르겠어요」 등 퀴즈 하단 버튼을 <strong>누르기 쉽게 키우고</strong>, 화면 읽기 기능에서 버튼 이름이 <strong>두 번 읽히던</strong> 문제를 수정했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-sync-alt mr-2"></i>구글 동기화·로그인 안정화</div>
+              <p style="margin-bottom:0;">구글 동기화와 로그인·로그아웃을 안정화했습니다. 로그인에 실패하면 <strong>알기 쉬운 안내 문구</strong>를 보여 드리고, 좁은 화면에서 설정 화면의 동기화 버튼이 <strong>화면 밖으로 잘리던</strong> 문제도 수정했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-crown mr-2"></i>구매·구독 안정화</div>
+              <p style="margin-bottom:0;">구매 복원에 실패하면 로딩이 계속되는 대신 <strong>오류 안내</strong>를 보여 드리고, 구독 상태가 <strong>올바르게 반영되도록</strong> 개선했습니다. 구독 중인데 앱을 실행하면 하단 배너 자리가 <strong>잠깐 보이던</strong> 문제도 수정했습니다.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-title"><i class="fas fa-tablet-alt mr-2"></i>하단 배너 표시 개선</div>
+              <p style="margin-bottom:0;">하단 배너가 태블릿 등 넓은 화면에서도 <strong>화면 폭에 맞게</strong> 표시됩니다.</p>
+            </div>
+
+            <p>스토어에서 앱을 최신 버전(v6.18.0)으로 업데이트해 주세요.</p>
+            <p>항상 일단공부를 이용해 주셔서 감사합니다. 사용 중 불편한 점은 앱 스토어 리뷰를 통해 알려주세요.</p>
+          </div>
+        </div>
+
+        <div class="notice-nav">
+          <span></span>
+          <a href="../repeat-count-input-and-stability/"><i class="fas fa-chevron-right mr-1"></i>다음 글</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-section py-5 theme-bg-secondary text-center">
+      <div class="container">
+        <h3 class="text-white font-weight-bold mb-3">
+          일본어 단어 공부, 「일단공부」해 보세요!
+        </h3>
+        <div class="cta-btns">
+          <ul class="app-stores list-unstyled list-inline mx-auto d-inline-block">
+            <li class="list-inline-item mr-3">
+              <a href="https://apps.apple.com/app/ildangongbu/id1456091125" target="_blank">
+                <img class="ios" src="../../assets/images/appstore-apple.svg" alt="App Store에서 다운로드" />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://play.google.com/store/apps/details?id=io.github.dev.yakuza.ildangongbu" target="_blank">
+                <img class="android" src="../../assets/images/appstore-android.svg" alt="Google Play에서 다운로드" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4">
+          <a href="https://ildangongbu.posstree.com/privacy/ko/" target="_blank" class="text-dark">개인정보 처리방침</a>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="../../assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../../assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="../../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
